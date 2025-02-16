@@ -1,0 +1,92 @@
+html
+
+body {
+    background-color: black;
+}
+
+/* styles for header */
+.header {
+    background-color: #222;
+    margin-bottom: 30px;
+    padding: 15px 50px;
+
+}
+
+.header img {
+    width: 160px;
+    height: 70px;
+}
+
+/* styles for article */
+.slogon {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 50px;
+}
+
+.slogon div {
+    color: white;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slogon p {
+    color: whitesmoke;
+    font-size: large;
+}
+
+/* styles for footer */
+.footer {
+    background-color: #222;
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* grid box designing */
+/* grid => rect or square
+        N -rows * 1-columns
+        20 * 1 
+        ==> max 12 cols*/
+.gridbox {
+    color: white;
+    display: grid;
+    /* grid-template-columns: 250px 250px 250px 250px; */
+    /* grid-template-columns: 20% 20% 20% 20%; */
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-template-rows: 400px 400px 400px; */
+    grid-template-rows: auto auto auto auto;
+    column-gap: normal;
+    row-gap: 25px;
+    grid-gap: 20px;
+
+    width: 80%;
+    margin: auto;
+}
+
+.gridbox img {
+    width: 100%;
+    height: 300px;
+   
+}
+
+.gridbox a{
+    color: #ffff33;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.gridbox section div:last-child{
+    color: yellow;
+}
+
+.gridbox section {
+    background-color: black;
+}
+
+.gridbox:hover >:not(:hover){
+    filter: blur(5px);
+}
+
