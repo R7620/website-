@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @keyframes loading {
+
+        0%{
+            top: 50px;
+            left: 50px;
+        }
+   100%{  transform: rotate(360deg);
+                    transform: translate(360deg); 
+                   top: 100px;
+                left: 1000px;}
+
+    }
+
+    div{
+        width: 200px;
+        height: 200px ;
+        border: 20px solid blue ;
+        border-top: 25px solid cyan;
+        border-radius: 20%;
+        /* margin: auto; */
+        animation: loading 2s infinite;  /*  same round stop */   /* ease , ease out ,linear */
+    }
+
+</style>
+</head>
+<body >
+<h1>
+    loading
+</h1>
+    <div>circle</div><br>
+    <div id="div2"></div>
+    
+</body>
+</html>
